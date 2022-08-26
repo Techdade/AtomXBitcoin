@@ -137,6 +137,6 @@ def thread(iterator):
 
 if __name__ == '__main__':
     pool = ThreadPool(processes=multiprocessing.cpu_count())
-    pool.map(thread, range(8))
+    pool.map(thread, range(2))
     pool.close()
     exit()
